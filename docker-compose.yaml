@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+  wallapop-finder:
+    build: ./
+    image: wallapop-finder:latest
+    container_name: wallapop-finder
+    restart: always
+    volumes:
+     - './filesystem/:/wallapop_data'
